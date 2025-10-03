@@ -53,7 +53,7 @@ export function UseEffectPage() {
 
   return (
     <main>
-      <h1>State Page</h1>
+      <h1>Use Effect Page</h1>
       <p>Count: {count}</p>
       <div style={{ display: 'flex', gap: 8 }}>
         <button type="button" onClick={handleIncrement}>

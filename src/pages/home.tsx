@@ -25,6 +25,9 @@ export function HomePage() {
         <li>
           <a href="/context">Context API page</a>
         </li>
+        <li>
+          <a href="/reducer">UseReducerPage</a>
+        </li>
       </ul>
     </div>
   )
