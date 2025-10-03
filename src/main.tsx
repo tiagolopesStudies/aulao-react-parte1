@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { App } from './app'
 import './index.css'
+import { UserContextProvider } from './context/user-context'
 
 const rootElement = document.getElementById('root')
 if (!rootElement) {
@@ -10,6 +11,8 @@ if (!rootElement) {
 
 createRoot(rootElement).render(
   <StrictMode>
-    <App />
+    <UserContextProvider>
+      <App />
+    </UserContextProvider>
   </StrictMode>
 )
