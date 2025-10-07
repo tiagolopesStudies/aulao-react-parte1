@@ -34,6 +34,9 @@ export function HomePage() {
         <li>
           <a href="/custom-hooks">CustomHooksPage</a>
         </li>
+        <li>
+          <a href="/use-id">UseIdPage</a>
+        </li>
       </ul>
     </div>
   )

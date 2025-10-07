@@ -4,6 +4,7 @@ import { CustomHooksPage } from './pages/custom-hooks'
 import { HomePage } from './pages/home'
 import { ReactPortalPage } from './pages/react-portal'
 import { UseEffectPage } from './pages/use-effect'
+import { UseIdPage } from './pages/use-id'
 import { UseReducerPage } from './pages/use-reducer'
 import { UseRefPage } from './pages/use-ref'
 import { UseStatePage } from './pages/use-state'
@@ -54,5 +55,9 @@ export const routes = createBrowserRouter([
   {
     path: '/custom-hooks',
     element: <CustomHooksPage />,
+  },
+  {
+    path: '/use-id',
+    element: <UseIdPage />,
   },
 ])
