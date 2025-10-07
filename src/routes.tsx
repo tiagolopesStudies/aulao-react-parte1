@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { ContextApiPage } from './pages/context'
+import { CustomHooksPage } from './pages/custom-hooks'
 import { HomePage } from './pages/home'
 import { ReactPortalPage } from './pages/react-portal'
 import { UseEffectPage } from './pages/use-effect'
@@ -49,5 +50,9 @@ export const routes = createBrowserRouter([
   {
     path: '/ref',
     element: <UseRefPage />,
+  },
+  {
+    path: '/custom-hooks',
+    element: <CustomHooksPage />,
   },
 ])
