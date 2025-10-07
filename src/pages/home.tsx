@@ -28,6 +28,9 @@ export function HomePage() {
         <li>
           <a href="/reducer">UseReducerPage</a>
         </li>
+        <li>
+          <a href="/ref">UseRefPage</a>
+        </li>
       </ul>
     </div>
   )
