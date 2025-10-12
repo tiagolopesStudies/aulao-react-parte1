@@ -37,6 +37,9 @@ export function HomePage() {
         <li>
           <a href="/use-id">UseIdPage</a>
         </li>
+        <li>
+          <a href="/class-component">ClassComponentPage</a>
+        </li>
       </ul>
     </div>
   )

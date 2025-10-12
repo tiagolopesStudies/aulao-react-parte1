@@ -1,4 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom'
+import { ClassComponentPage } from './pages/class-component'
 import { ContextApiPage } from './pages/context'
 import { CustomHooksPage } from './pages/custom-hooks'
 import { HomePage } from './pages/home'
@@ -59,5 +60,9 @@ export const routes = createBrowserRouter([
   {
     path: '/use-id',
     element: <UseIdPage />,
+  },
+  {
+    path: '/class-component',
+    element: <ClassComponentPage />,
   },
 ])

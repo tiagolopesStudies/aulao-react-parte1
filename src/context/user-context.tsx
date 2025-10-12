@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react'
+import { createContext, type FC, type ReactNode, useState } from 'react'
 
 interface User {
   name: string
@@ -10,9 +10,13 @@ interface UserContextProps {
   updateUser: (newUser: User) => void
 }
 
+interface UserContextProviderProps {
+  children: ReactNode
+}
+
 export const UserContext = createContext<UserContextProps>({} as UserContextProps)
 
-export function UserContextProvider({ children }: { children: React.ReactNode }) {
+export const UserContextProvider: FC<UserContextProviderProps> = ({ children }) => {
   const [user, setUser] = useState<User>(() => {
     const storedUser = localStorage.getItem('@react-course:user')
     return storedUser
