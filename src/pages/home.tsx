@@ -1,45 +1,19 @@
+import { ROUTE_LIST } from '../constants/route-list'
+
 export function HomePage() {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>Welcome to the Home Page!</p>
+    <div className="flex flex-col items-center gap-4 p-8">
+      <h1 className="text-xl font-semibold text-center">Home Page</h1>
+      <p className="text-center">Welcome to the Home Page!</p>
 
-      <h2>All pages:</h2>
+      <h2 className="text-lg font-semibold">All pages:</h2>
 
-      <ul>
-        <li>
-          <a href="/state">UseStatePage</a>
-        </li>
-        <li>
-          <a href="/state2">UseStateWithObjectPage</a>
-        </li>
-        <li>
-          <a href="/state3">UseStateWithFunctionPage</a>
-        </li>
-        <li>
-          <a href="/portal">ReactPortalPage</a>
-        </li>
-        <li>
-          <a href="/effect">UseEffectPage</a>
-        </li>
-        <li>
-          <a href="/context">Context API page</a>
-        </li>
-        <li>
-          <a href="/reducer">UseReducerPage</a>
-        </li>
-        <li>
-          <a href="/ref">UseRefPage</a>
-        </li>
-        <li>
-          <a href="/custom-hooks">CustomHooksPage</a>
-        </li>
-        <li>
-          <a href="/use-id">UseIdPage</a>
-        </li>
-        <li>
-          <a href="/class-component">ClassComponentPage</a>
-        </li>
+      <ul className="list-disc pl-5">
+        {ROUTE_LIST.map((route) => (
+          <li key={route.path} className="hover:underline">
+            <a href={route.path}>{route.name}</a>
+          </li>
+        ))}
       </ul>
     </div>
   )
