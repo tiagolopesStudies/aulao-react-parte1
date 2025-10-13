@@ -13,6 +13,8 @@ import { UseStateWithObjectPage } from '@/pages/fundamentals/use-state-with-obje
 import { HomePage } from '@/pages/home'
 import { ActionsPage } from '@/pages/react19/actions'
 import { UseHookPage } from '@/pages/react19/use'
+import { UseActionStatePage } from '@/pages/react19/use-action-state'
+import { UseTransitionPage } from '@/pages/react19/use-transition'
 import { UseWithContextPage } from '@/pages/react19/use-with-context'
 import { DaisyUIPage } from '@/pages/styling/daisy-ui'
 import { ShadcnUIPage } from '@/pages/styling/shadcn-ui'
@@ -113,5 +115,15 @@ export const ROUTE_LIST: Route[] = [
     path: '/actions',
     name: 'ActionsPage',
     element: <ActionsPage />,
+  },
+  {
+    path: '/use-action-state',
+    name: 'UseActionStatePage',
+    element: <UseActionStatePage />,
+  },
+  {
+    path: '/use-transition',
+    name: 'UseTransitionPage',
+    element: <UseTransitionPage />,
   },
 ]

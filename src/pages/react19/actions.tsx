@@ -1,13 +1,20 @@
-export function ActionsPage() {
-  function handleSubmit(formData: FormData) {
-    const name = formData.get('name')
-    const email = formData.get('email')
-    const password = formData.get('password')
-    for (const [key, value] of formData.entries()) {
-      console.log(`${key}: ${value}`)
-    }
+import { SubmitButton } from '@/components/submit-button'
 
-    console.log({ name, email, password })
+export function ActionsPage() {
+  async function handleSubmit(formData: FormData) {
+    await new Promise((resolve) => {
+      setTimeout(() => {
+        const name = formData.get('name')
+        const email = formData.get('email')
+        const password = formData.get('password')
+        for (const [key, value] of formData.entries()) {
+          console.log(`${key}: ${value}`)
+        }
+
+        console.log({ name, email, password })
+        resolve(true)
+      }, 2000)
+    })
   }
 
   return (
@@ -29,12 +36,7 @@ export function ActionsPage() {
           <input type="password" id="password" name="password" placeholder="Password" />
         </div>
 
-        <button
-          type="submit"
-          className="bg-blue-500 text-white py-2 px-4 rounded cursor-pointer hover:bg-blue-600 transition-colors"
-        >
-          Salvar
-        </button>
+        <SubmitButton />
       </form>
     </div>
   )
