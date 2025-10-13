@@ -4,7 +4,8 @@
     "rules": {
       "correctness": {
         "useUniqueElementIds": "off",
-        "noUnusedImports": "warn"
+        "noUnusedImports": "warn",
+        "noUnknownProperty": "warn"
       },
       "suspicious": {
         "noUnknownAtRules": "off"

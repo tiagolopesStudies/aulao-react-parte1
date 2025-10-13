@@ -1,3 +1,4 @@
+import { ReactHookFormPage } from '@/pages/form/react-hook-form'
 import { ClassComponentPage } from '@/pages/fundamentals/class-component'
 import { ContextApiPage } from '@/pages/fundamentals/context'
 import { CustomHooksPage } from '@/pages/fundamentals/custom-hooks'
@@ -89,5 +90,10 @@ export const ROUTE_LIST: Route[] = [
     path: '/shadcn-ui',
     name: 'ShadcnUIPage',
     element: <ShadcnUIPage />,
+  },
+  {
+    path: '/react-hook-form',
+    name: 'ReactHookFormPage',
+    element: <ReactHookFormPage />,
   },
 ]
