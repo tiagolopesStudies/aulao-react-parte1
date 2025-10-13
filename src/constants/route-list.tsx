@@ -11,6 +11,7 @@ import { UseStatePage } from '@/pages/fundamentals/use-state'
 import { UseStateWithFunctionPage } from '@/pages/fundamentals/use-state-with-function'
 import { UseStateWithObjectPage } from '@/pages/fundamentals/use-state-with-object'
 import { HomePage } from '@/pages/home'
+import { ActionsPage } from '@/pages/react19/actions'
 import { UseHookPage } from '@/pages/react19/use'
 import { UseWithContextPage } from '@/pages/react19/use-with-context'
 import { DaisyUIPage } from '@/pages/styling/daisy-ui'
@@ -107,5 +108,10 @@ export const ROUTE_LIST: Route[] = [
     path: '/use-with-context',
     name: 'UseWithContextPage',
     element: <UseWithContextPage />,
+  },
+  {
+    path: '/actions',
+    name: 'ActionsPage',
+    element: <ActionsPage />,
   },
 ]
