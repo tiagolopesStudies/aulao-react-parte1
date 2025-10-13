@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react'
-import { UserContext } from '../context/user-context'
+import { UserContext } from '@/context/user-context'
 
 export function ContextApiPage() {
   const { user, updateUser } = useContext(UserContext)

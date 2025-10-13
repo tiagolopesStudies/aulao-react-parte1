@@ -1,4 +1,4 @@
-import { ROUTE_LIST } from '../constants/route-list'
+import { ROUTE_LIST } from '@/constants/route-list'
 
 export function HomePage() {
   return (

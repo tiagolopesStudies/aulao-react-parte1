@@ -1,4 +1,4 @@
-import { UseId } from '../components/use-id'
+import { UseId } from '@/components/use-id'
 
 export function UseIdPage() {
   return (

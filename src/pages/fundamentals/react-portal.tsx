@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Modal } from '../components/modal'
+import { Modal } from '@/components/modal'
 
 export function ReactPortalPage() {
   const [isModalOpen, setIsModalOpen] = useState(false)
