@@ -11,6 +11,7 @@ import { UseStateWithFunctionPage } from '@/pages/fundamentals/use-state-with-fu
 import { UseStateWithObjectPage } from '@/pages/fundamentals/use-state-with-object'
 import { HomePage } from '@/pages/home'
 import { DaisyUIPage } from '@/pages/styling/daisy-ui'
+import { ShadcnUIPage } from '@/pages/styling/shadcn-ui'
 
 type Route = {
   path: string
@@ -83,5 +84,10 @@ export const ROUTE_LIST: Route[] = [
     path: '/daisy-ui',
     name: 'DaisyUiPage',
     element: <DaisyUIPage />,
+  },
+  {
+    path: '/shadcn-ui',
+    name: 'ShadcnUIPage',
+    element: <ShadcnUIPage />,
   },
 ]
