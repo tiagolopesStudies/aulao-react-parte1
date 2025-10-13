@@ -10,6 +10,7 @@ import { UseStatePage } from '@/pages/fundamentals/use-state'
 import { UseStateWithFunctionPage } from '@/pages/fundamentals/use-state-with-function'
 import { UseStateWithObjectPage } from '@/pages/fundamentals/use-state-with-object'
 import { HomePage } from '@/pages/home'
+import { DaisyUIPage } from '@/pages/styling/daisy-ui'
 
 type Route = {
   path: string
@@ -77,5 +78,10 @@ export const ROUTE_LIST: Route[] = [
     path: '/class-component',
     name: 'ClassComponentPage',
     element: <ClassComponentPage />,
+  },
+  {
+    path: '/daisy-ui',
+    name: 'DaisyUiPage',
+    element: <DaisyUIPage />,
   },
 ]
