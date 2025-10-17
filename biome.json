@@ -8,7 +8,8 @@
         "noUnknownProperty": "warn"
       },
       "suspicious": {
-        "noUnknownAtRules": "off"
+        "noUnknownAtRules": "off",
+        "noArrayIndexKey": "warn"
       }
     }
   },

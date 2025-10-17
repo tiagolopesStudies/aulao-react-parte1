@@ -1,23 +1,4 @@
-import { ReactHookFormPage } from '@/pages/form/react-hook-form'
-import { ClassComponentPage } from '@/pages/fundamentals/class-component'
-import { ContextApiPage } from '@/pages/fundamentals/context'
-import { CustomHooksPage } from '@/pages/fundamentals/custom-hooks'
-import { ReactPortalPage } from '@/pages/fundamentals/react-portal'
-import { UseEffectPage } from '@/pages/fundamentals/use-effect'
-import { UseIdPage } from '@/pages/fundamentals/use-id'
-import { UseReducerPage } from '@/pages/fundamentals/use-reducer'
-import { UseRefPage } from '@/pages/fundamentals/use-ref'
-import { UseStatePage } from '@/pages/fundamentals/use-state'
-import { UseStateWithFunctionPage } from '@/pages/fundamentals/use-state-with-function'
-import { UseStateWithObjectPage } from '@/pages/fundamentals/use-state-with-object'
-import { HomePage } from '@/pages/home'
-import { ActionsPage } from '@/pages/react19/actions'
-import { UseHookPage } from '@/pages/react19/use'
-import { UseActionStatePage } from '@/pages/react19/use-action-state'
-import { UseTransitionPage } from '@/pages/react19/use-transition'
-import { UseWithContextPage } from '@/pages/react19/use-with-context'
-import { DaisyUIPage } from '@/pages/styling/daisy-ui'
-import { ShadcnUIPage } from '@/pages/styling/shadcn-ui'
+import * as page from '@/pages'
 
 type Route = {
   path: string
@@ -29,101 +10,111 @@ export const ROUTE_LIST: Route[] = [
   {
     path: '/',
     name: 'HomePage',
-    element: <HomePage />,
+    element: <page.HomePage />,
   },
   {
     path: '/state',
     name: 'UseStatePage',
-    element: <UseStatePage />,
+    element: <page.UseStatePage />,
   },
   {
     path: '/state2',
     name: 'UseStateWithObjectPage',
-    element: <UseStateWithObjectPage />,
+    element: <page.UseStateWithObjectPage />,
   },
   {
     path: '/state3',
     name: 'UseStateWithFunctionPage',
-    element: <UseStateWithFunctionPage />,
+    element: <page.UseStateWithFunctionPage />,
   },
   {
     path: '/portal',
     name: 'ReactPortalPage',
-    element: <ReactPortalPage />,
+    element: <page.ReactPortalPage />,
   },
   {
     path: '/context',
     name: 'UseContextPage',
-    element: <ContextApiPage />,
+    element: <page.ContextApiPage />,
   },
   {
     path: '/effect',
     name: 'UseEffectPage',
-    element: <UseEffectPage />,
+    element: <page.UseEffectPage />,
   },
   {
     path: '/reducer',
     name: 'UseReducerPage',
-    element: <UseReducerPage />,
+    element: <page.UseReducerPage />,
   },
   {
     path: '/ref',
     name: 'UseRefPage',
-    element: <UseRefPage />,
+    element: <page.UseRefPage />,
   },
   {
     path: '/custom-hooks',
     name: 'CustomHooksPage',
-    element: <CustomHooksPage />,
+    element: <page.CustomHooksPage />,
   },
   {
     path: '/use-id',
     name: 'UseIdPage',
-    element: <UseIdPage />,
+    element: <page.UseIdPage />,
   },
   {
     path: '/class-component',
     name: 'ClassComponentPage',
-    element: <ClassComponentPage />,
+    element: <page.ClassComponentPage />,
   },
   {
     path: '/daisy-ui',
     name: 'DaisyUiPage',
-    element: <DaisyUIPage />,
+    element: <page.DaisyUIPage />,
   },
   {
     path: '/shadcn-ui',
     name: 'ShadcnUIPage',
-    element: <ShadcnUIPage />,
+    element: <page.ShadcnUIPage />,
   },
   {
     path: '/react-hook-form',
     name: 'ReactHookFormPage',
-    element: <ReactHookFormPage />,
+    element: <page.ReactHookFormPage />,
   },
   {
     path: '/use',
     name: 'UseHookPage',
-    element: <UseHookPage />,
+    element: <page.UseHookPage />,
   },
   {
     path: '/use-with-context',
     name: 'UseWithContextPage',
-    element: <UseWithContextPage />,
+    element: <page.UseWithContextPage />,
   },
   {
     path: '/actions',
     name: 'ActionsPage',
-    element: <ActionsPage />,
+    element: <page.ActionsPage />,
   },
   {
     path: '/use-action-state',
     name: 'UseActionStatePage',
-    element: <UseActionStatePage />,
+    element: <page.UseActionStatePage />,
   },
   {
     path: '/use-transition',
     name: 'UseTransitionPage',
-    element: <UseTransitionPage />,
+    element: <page.UseTransitionPage />,
+  },
+  {
+    path: '/motion',
+    name: 'MotionPage',
+    element: <page.MotionPage />,
+  },
+  {
+    path: '/motion-keyframes',
+    name: 'MotionKeyframesPage',
+    element: <page.MotionKeyframesPage />,
   },
 ]

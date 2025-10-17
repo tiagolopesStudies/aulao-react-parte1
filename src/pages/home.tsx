@@ -8,7 +8,7 @@ export function HomePage() {
 
       <h2 className="text-lg font-semibold">All pages:</h2>
 
-      <ul className="list-disc pl-5">
+      <ul className="list-disc grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-2">
         {ROUTE_LIST.map((route) => (
           <li key={route.path} className="hover:underline">
             <a href={route.path}>{route.name}</a>
