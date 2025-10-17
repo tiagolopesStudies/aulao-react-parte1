@@ -117,4 +117,14 @@ export const ROUTE_LIST: Route[] = [
     name: 'MotionKeyframesPage',
     element: <page.MotionKeyframesPage />,
   },
+  {
+    path: '/motion-variants',
+    name: 'MotionVariantsPage',
+    element: <page.MotionVariantPage />,
+  },
+  {
+    path: '/motion-gestures',
+    name: 'MotionGesturesPage',
+    element: <page.MotionGesturesPage />,
+  },
 ]
