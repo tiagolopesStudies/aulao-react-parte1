@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/suspicious/noArrayIndexKey: example */
 import { motion } from 'motion/react'
 
 export function BouncingLoader() {

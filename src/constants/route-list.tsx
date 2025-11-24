@@ -127,4 +127,9 @@ export const ROUTE_LIST: Route[] = [
     name: 'MotionGesturesPage',
     element: <page.MotionGesturesPage />,
   },
+  {
+    path: '/motion-animated-components',
+    name: 'AnimatedComponentsPage',
+    element: <page.AnimatedComponentsPage />,
+  },
 ]
